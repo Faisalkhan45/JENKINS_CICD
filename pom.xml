@@ -60,4 +60,33 @@
           <version>3.3.0</version>
         </plugin>
         <plugin>
-     
+          <artifactId>maven-jar-plugin</artifactId>
+          <version>3.4.2</version>
+          <configuration>
+            <archive>
+              <manifest>
+                <mainClass>com.TEST2.App</mainClass> <!-- Replace with your main class -->
+              </manifest>
+            </archive>
+          </configuration>
+        </plugin>
+        <plugin>
+          <artifactId>maven-install-plugin</artifactId>
+          <version>3.1.2</version>
+        </plugin>
+        <plugin>
+          <artifactId>maven-deploy-plugin</artifactId>
+          <version>3.1.2</version>
+        </plugin>
+        <plugin>
+          <artifactId>maven-site-plugin</artifactId>
+          <version>3.12.1</version>
+        </plugin>
+        <plugin>
+          <artifactId>maven-project-info-reports-plugin</artifactId>
+          <version>3.6.1</version>
+        </plugin>
+      </plugins>
+    </pluginManagement>
+  </build>
+</project>
